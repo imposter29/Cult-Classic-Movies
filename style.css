@@ -150,11 +150,12 @@ footer {
     animation: fadeIn 2s ease-in;
 }
 #FLP{
-    background-image: url(movie_pages/icons/stars.jpg);
+    background-image: url(stars.jpg);
     background-size: cover; 
     background-repeat: no-repeat; 
     background-position: center;
     height: 100%;
+    width: 100%;
     background-attachment: fixed;
 
 }
