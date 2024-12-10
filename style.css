@@ -100,9 +100,9 @@ body {
     animation: fadeIn 2s ease-in;
 }
 #FLP{
-    background-image: url(stars.jpg);
-    background-size: cover; /* Scales image to cover the entire area */
-    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
+    background-image: url(movie_pages/icons/stars.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat; 
     background-position: center;
     height: 100%;
     background-attachment: fixed;
@@ -232,5 +232,63 @@ body {
     background-attachment: fixed;
     height: 100%;
 }
+footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
 
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li,
+.footer-social li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links a,
+.footer-social a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: red;
+}
+
+.footer-info {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.image-list img {
+    width: 40px;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-list img:hover {
+    transform: scale(1.2);
+}
