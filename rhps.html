@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rocky Horror Picture Show (1975)</title>
+    <link rel="stylesheet" href="movies.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Jaro:opsz@6..72&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Nabla&family=Righteous&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Anton+SC&family=Jaro:opsz@6..72&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lilita+One&family=Nabla&family=Righteous&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+</head>
+<style>
+    .genres {
+        text-align: center;
+        margin: 20px 0; 
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .genre-box {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        color: #fff;
+        background-color: #444;
+        border-radius: 10px; 
+        padding: 10px 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s, background-color 0.3s;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s ease-out forwards;
+    }
+
+    #genre1 {
+        animation-delay: 0.5s;
+    }
+
+    #genre2 {
+        animation-delay: 1s;
+    }
+
+    #genre3 {
+        animation-delay: 1.5s;
+    }
+
+    #genre4 {
+        animation-delay: 2s;
+    }
+
+    
+    .genre-box:hover {
+        transform: scale(1.1);
+        background-color: #666;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+</style>
+<body>
+    <div class="heading">
+        <h1 style="">The Rocky Horror Picture Show (1975)</h1>
+    </div>
+    <div class="image">
+        <div id="line"></div>
+        <img src="movies_imgs/rocky.jpg" width="300px" id="image">
+    </div>
+    <div class="rate">
+        <h6 style="color: grey" id="imdb">IMDB Rating</h6>
+        <p id="nu">7.4/10</p>
+        <img src="Star Rating Icon.png" width="20px" id="star">
+        <h6 style="color: grey;" id="rt">Rotten Tomatoes</h6>
+        <p id="rtm">80%</p>
+        <img src="Rotten Tomatoes Clip Art Icon.png" width="20px" id="tomato">
+    </div>
+    <div id="line2"></div>
+    <div class="genres">
+        <p id="genre1" class="genre-box">Musical</p>
+        <p id="genre2" class="genre-box">Comedy</p>
+        <p id="genre3" class="genre-box">Horror</p>
+        <p id="genre4" class="genre-box">Cult</p>
+    </div>
+    <div class="about">
+        <p>"The Rocky Horror Picture Show" is a musical comedy horror film that was released in 1975, directed by Jim Sharman.</p>
+        <p>The film is an adaptation of the 1973 stage musical "The Rocky Horror Show," which was created by Richard O'Brien, who also stars in the film as the character Riff Raff.</p>
+        <p>The story follows a young couple, Brad Majors and Janet Weiss, who find themselves stranded at a remote castle during a storm.</p>
+        <p>The castle is inhabited by a group of eccentric characters, including the flamboyant and charismatic Dr. Frank-N-Furter, a transvestite scientist who is in the process of creating a living man named Rocky.</p>
+        <p>The film is known for its campy style, catchy musical numbers, and its exploration of themes related to sexuality, identity, and nonconformity.</p>
+        <p>Upon its initial release, "The Rocky Horror Picture Show" did not perform well at the box office but later gained a massive cult following, particularly through midnight screenings where audiences would dress up as characters, participate in call-and-response interactions, and engage in various rituals.</p>
+        <p>The film is celebrated for its unique blend of genres, its iconic songs, and its impact on popular culture, making it a landmark in both film and LGBTQ+ representation.</p>
+    </div>
+        
+    <footer class="footer">
+        <p>&copy; 2024 The Rocky Horror Picture Show | All Rights Reserved</p>
+        <div class="footer-links">
+            <a href="#privacy-policy" target="_blank">Privacy Policy</a> | 
+            <a href="#terms-of-service" target="_blank">Terms of Service</a> | 
+            <a href="#contact" target="_blank">Contact Us</a>
+        </div>
+    </footer>    
+</body>
+</html>
